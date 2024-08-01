@@ -1,0 +1,287 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: #264653;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 img, img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 1em 0;
+}
+p img {
+    margin-left: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+a {
+    color: #2A9D8F;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #E76F51;
+    text-decoration: underline;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.more {
+    text-align: right;
+    color: #E76F51;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    background: #f5f5f5;
+    font: 11px Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #264653;
+}
+
+#header {
+    background-image: url(jewelry-photography-at-home-4.jpg.avif);
+    padding: 20px;
+    color: #264653;
+    text-align: center;
+    height: 20rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    background-size: cover;
+    position: relative;
+}
+
+#header h1 {
+    position: relative;
+    text-align: center;
+    color: #264653;
+    padding-top: 50px;
+    margin-left: 0;
+    font-size: 50px;
+    font-family: 'Times New Roman', serif;
+}
+
+#header h1 em, #header h1 strong {
+    display: block;
+    font-weight: normal;
+}
+
+#nav {
+    position: relative;
+    background-color: #2A9D8F;
+    margin-top: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#nav div {
+    padding: 0 10px;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0 10px;
+    color: #E9C46A;
+}
+
+#nav a {
+    font-weight: normal;
+    color: #E9C46A;
+}
+
+#body {
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#body h2 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+#body h2 em {
+    font-size: 25px;
+    font-family: serif;
+}
+
+#black-tl, #black-tr, #black-bl, #black-br {
+    width: 100%;
+    background: #264653;
+}
+
+#black-tl {
+    margin-top: 30px;
+}
+
+.black-box {
+    float: left;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 25px;
+}
+
+.black-box h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #264653;
+}
+
+.black-box h2 em {
+    font-size: 22px;
+    font-family: serif;
+}
+
+.black-box .more {
+    color: #E76F51;
+}
+
+#footer {
+    margin: 20px auto;
+    padding: 20px;
+    background: #264653;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #E9C46A;
+}
+
+#tips, #choose {
+    float: left;
+    width: 45%;
+    margin: 20px 2.5%;
+}
+
+#tips h2, #choose h2 {
+    color: #F4A261;
+}
+
+#tips p, #choose p {
+    font-size: 1rem;
+    color: #E9C46A;
+}
+
+#copyright {
+    margin-top: 10px;
+    text-align: center;
+    color: #E9C46A;
+}
+
+#s, #submit {
+    position: relative;
+    top: 0.4em;
+}
+
+.clearfix {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    #header h1 {
+        font-size: 3rem;
+    }
+
+    #nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .black-box {
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tips, #choose {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    #header h1 {
+        font-size: 2rem;
+    }
+
+    #nav {
+        padding: 10px 0;
+    }
+
+    #nav li {
+        margin: 5px 0;
+    }
+
+    .black-box {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #footer h2 {
+        font-size: 16px;
+    }
+}

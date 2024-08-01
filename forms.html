@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            text-align: left;
+        }
+
+        form li {
+            padding-left: 30%;
+            list-style: none;
+        }
+
+        .parent {
+            max-width: 80%;
+            box-shadow: 2px 2px 2px 2px gray;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+
+        <h1><em>MAY</em><strong>JEWELLERY</strong></h1>
+    </div>
+    <div id="nav">
+        <div>
+            <ul>
+                <li><a href="index.html">HOME</a> &nbsp;|&nbsp;</li>
+                <li><a href="aboutus.html">ABOUT US</a> &nbsp;|&nbsp;</li>
+                <li><a href="rings.html">RINGS</a> &nbsp;|&nbsp;</li>
+                <li><a href="necklace.html">NECKLACES</a> &nbsp;|&nbsp;</li>
+                <li><a href="contactus.html">CONTACT US</a> &nbsp;|&nbsp;</li>
+                <li><a href="forms.html">SUBSCRIBE</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="parent">
+        <form action="submit.html" onsubmit="showAlertAndRedirect(event)">
+            <h1>Create an MAY Jewellery Profile</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td><label for="name-input">First Name:</label></td>
+                    <td><input type="text" id="name-input" name="Name" /></td>
+                </tr>
+                <tr>
+                    <td><label for="name-input">Last Name:</label></td>
+                    <td><input type="text" id="name-input" name="LastName" /></td>
+                </tr>
+                <tr>
+                    <td><label for="adresss-input">Address:</label></td>
+                    <td><input type="text" id="adress-input" name="Address" /></td>
+                </tr>
+                <tr>
+                    <td><label for="city-input">City:</label></td>
+                    <td><input type="text" id="cityinput" name="City" /></td>
+                </tr>
+                <tr>
+                    <td><label for="postalcode-input">Postal code:</label></td>
+                    <td><input type="text" id="postcode-input" name="Postalcode" /></td>
+                </tr>
+                <tr>
+                    <td><label for="email-input">Email:</label></td>
+                    <td><input type="text" id="email-input" name="Email" placeholder="example@example.com" /></td>
+                </tr>
+                <tr>
+                    <td><label for="password-input">Password:</label></td>
+                    <td><input type="password" id="password-input" name="Password" /></td>
+                </tr>
+                <tr>
+                    <td><label for="date-input">Date:</label></td>
+                    <td><input type="date" id="date-input" name="Date" /></td>
+                </tr>
+                <tr>
+                    <td><label for="phone-input">Mobile (optional):</label></td>
+                    <td>
+                        <input type="tel" id="phone-input" name="Phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
+                        <small>Format: (123)-456-789</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="Offer" value="AcceptOffer" />
+                        <label for="Offer">Yes, I would like to receive exclusive offers, sneak peeks at new products
+                            and
+                            inspiration from MAY Jewellery</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="ViaMail" value="ViaEmail" />
+                        <label for="ViaMail">Via Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="ViaSms" value="ViaSms" />
+                        <label for="ViaSms">Via SMS (Standard message and data rates may apply.)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="Policy" value="PrivacyPolicy" />
+                        <label for="Policy">I have read and understood the Terms of Use and Privacy Policy.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>
+                            Submit
+                            
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+        
+    </div>
+
+</body>
+<script>
+    function showAlertAndRedirect(event) {
+        event.preventDefault(); // Prevent the default form submission
+        alert('Thanks for submitting your profile!');
+
+        // Redirect to another page after 2 seconds
+        setTimeout(function () {
+            window.location.href = 'index.html';
+        }, 500);
+    }
+</script>
+</html>
