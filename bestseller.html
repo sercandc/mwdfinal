@@ -1,83 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        *{
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
+        img {
+            max-width: 80%;
+            margin: auto;
+            height: auto;
+            padding-left: 18%;
+            padding-top: 5%;
+
         }
-        img{
-         max-width:80%;
-         margin:auto;
-         
-         height: auto;
-         padding-left: 18%;
-         padding-top: 5%;
-         
-         
+
+        p {
+            width: auto;
+            margin: 10px;
+            padding: 10px;
         }
-        p{
-         width: auto;
-         margin:10px;
-         padding: 10px;
+
+        .img ul {
+            list-style: none;
+
         }
-        ul{
-         list-style: none;
-         
-         
+
+        .img li {
+            box-shadow: 2px 2px 2px 2px gray;
+            width: 30%;
+            margin: 10px;
+            max-height: 100%;
+            display: inline-block;
+
         }
-        li{
-         box-shadow: 2px 2px 2px 2px  gray;
-         width:30%;
-         margin: 10px;
-         max-height:100%;
-         display: inline-block;
-        
- 
-         
+
+        .img li:hover {
+            background-color: lightgrey;
+            opacity: 0.5;
+            cursor: grab;
         }
-        li:hover{
-        background-color:lightgrey;
-        opacity: 0.5;
-        cursor: grab;
-       }
-        
-        
-       
-     </style>
+    </style>
 </head>
+
 <body>
-    <a href="index.html">Return Home Page</a>
+    <div id="header">
+
+        <h1><em>MAY</em><strong>JEWELLERY</strong></h1>
+    </div>
+    <div id="nav">
+        <div>
+            <ul>
+                <li><a href="index.html">HOME</a> &nbsp;|&nbsp;</li>
+                <li><a href="aboutus.html">ABOUT US</a> &nbsp;|&nbsp;</li>
+                <li><a href="rings.html">RINGS</a> &nbsp;|&nbsp;</li>
+                <li><a href="necklace.html">NECKLACES</a> &nbsp;|&nbsp;</li>
+                <li><a href="contactus.html">CONTACT US</a> &nbsp;|&nbsp;</li>
+                <li><a href="forms.html">SUBSCRIBE</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="img">
         <ul>
-         <li> <img src="img-bestseller/1620120700-web-pdp-vraixrandm-strength-necklace-on-female-model.jpg.avif"  alt="">
-            <p> Strength Necklace in Yellow Gold | CA$2,630 </p> </li>
-            <li ><img src="img-bestseller/1655415102-q2_2022_model_hand_5_stone_bands_trillion_emerald_oval_princess_stacked_on_finger.jpg.avif"  alt="">
-                <p>The Emerald Five Stone Band in Yellow Gold | CA$1,315</p> </li>
+            <li> <img src="img-bestseller/1620120700-web-pdp-vraixrandm-strength-necklace-on-female-model.jpg.avif"
+                    alt="">
+                <p> Strength Necklace in Yellow Gold | CA$2,630 </p>
+            </li>
+            <li><img src="img-bestseller/1655415102-q2_2022_model_hand_5_stone_bands_trillion_emerald_oval_princess_stacked_on_finger.jpg.avif"
+                    alt="">
+                <p>The Emerald Five Stone Band in Yellow Gold | CA$1,315</p>
+            </li>
             <li><img src="img-bestseller/1655871877-arc-necklace-5-stone-oval-wg.jpg.avif" alt="">
-            <p>Arc Necklace Large in Yellow Gold | CA$4,603</p> </li>
-            <li><img src="img-bestseller/1658335757-q2-2022-bezel-solitaire-necklace-round-baguette-marquise-oval-princess-yg-on-model.jpg.avif" alt="">
-            <p>Bezel Solitaire Necklace Princess in Yellow Gold | CA$658</p> </li>
+                <p>Arc Necklace Large in Yellow Gold | CA$4,603</p>
+            </li>
+            <li><img src="img-bestseller/1658335757-q2-2022-bezel-solitaire-necklace-round-baguette-marquise-oval-princess-yg-on-model.jpg.avif"
+                    alt="">
+                <p>Bezel Solitaire Necklace Princess in Yellow Gold | CA$658</p>
+            </li>
             <li><img src="img-bestseller/1673906965-small-linked-tennis-necklace-model-nl-02-yellow.jpg.avif" alt="">
-            <p>Infinity Linked Tennis Necklace in Yellow Gold | CA$5,918</p> </li>
+                <p>Infinity Linked Tennis Necklace in Yellow Gold | CA$5,918</p>
+            </li>
             <li><img src="img-bestseller/1685482407-pave-3-row-band.jpg.avif" alt="">
-            <p>Multi Row Pavé Ring in Yellow Gold | CA$3,551</p> </li>
+                <p>Multi Row Pavé Ring in Yellow Gold | CA$3,551</p>
+            </li>
             <li><img src="img-bestseller/1685483819-5-row-ring.jpg.avif" alt="">
-            <p>Multi Row Pavé Ring in White Gold | CA$5,918</p> </li>
+                <p>Multi Row Pavé Ring in White Gold | CA$5,918</p>
+            </li>
             <li><img src="img-bestseller/1686846838-vrai_v_collection_tennisnecklace_model_1500x1500.jpg.avif" alt="">
-            <p>V Tennis Choker in Yellow Gold | CA$17,753</p> </li>
+                <p>V Tennis Choker in Yellow Gold | CA$17,753</p>
+            </li>
             <li><img src="img-bestseller/1694474734-remove_trillion_ring-change_metal_to_silver.jpeg.avif" alt="">
-            <p>Mixed Cuff Ring in Sterling Silver | CA$783</p> </li>
+                <p>Mixed Cuff Ring in Sterling Silver | CA$783</p>
+            </li>
             <li><img src="images/1667267609-image-2022-on-model-five-stone-band-round-yg-2.jpg.avif" alt="">
-            <p>The Round Five Stone Band in White Gold | CA$1,315</p> </li>
-            <li><img src="images/1700117478-web-pdp-on-model-solitaire-collection-oval-necklaces-carat-comparison-1x1-edited.png.avif"  alt="">
-            <p>Solitaire Necklace Oval in Yellow Gold | CA$592</p> </li>
+                <p>The Round Five Stone Band in White Gold | CA$1,315</p>
+            </li>
+            <li><img src="images/1700117478-web-pdp-on-model-solitaire-collection-oval-necklaces-carat-comparison-1x1-edited.png.avif"
+                    alt="">
+                <p>Solitaire Necklace Oval in Yellow Gold | CA$592</p>
+            </li>
         </ul>
 
     </div>
+    <a href="index.html">Return Home Page</a>
 </body>
+
 </html>
